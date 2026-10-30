@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Probabilidade: espaço amostral e eventos</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+<header id="inicio">
+  <nav class="nav container">
+    <a class="logo" href="#inicio">∑ Probabilidade</a>
+    <button id="menuBtn" aria-label="Abrir menu">☰</button>
+    <div id="menu">
+      <a href="#conceito">Conceito</a><a href="#espaco">Espaço amostral</a>
+      <a href="#eventos">Eventos</a><a href="#exemplos">Exemplos</a><a href="#quiz">Quiz</a>
+    </div>
+  </nav>
+  <section class="hero container">
+    <div>
+      <span class="tag">MATEMÁTICA NO DIA A DIA</span>
+      <h1>Probabilidade:<br><span>espaço amostral e eventos</span></h1>
+      <p>Entenda as possibilidades, descubra o que é um evento e aprenda a calcular chances com exemplos simples e interativos.</p>
+      <a class="btn btn-white" href="#conceito">Começar a aprender ↓</a>
+    </div>
+    <div class="visual" aria-label="Ilustração de dados">
+      <div class="circulo"></div><div class="dado">⚄</div><div class="mini-dado">⚂</div>
+      <div class="flutuante">P(A) = ?</div>
+    </div>
+  </section>
+</header>
+<main>
+<section class="section container" id="conceito">
+  <div class="section-title"><span>01</span><div><small>ENTENDENDO A IDEIA</small><h2>O que é probabilidade?</h2></div></div>
+  <p class="intro">A <strong>probabilidade</strong> mede a chance de um acontecimento ocorrer. Ela é útil quando existem diferentes resultados possíveis, como lançar um dado, tirar uma carta ou jogar uma moeda.</p>
+  <div class="formula"><small>FÓRMULA BÁSICA</small><div class="fraction"><b>Número de resultados favoráveis</b><b>Número de resultados possíveis</b></div><p>Multiplique por 100 para obter a porcentagem.</p></div>
+  <div class="cards">
+    <article><div class="emoji">🎯</div><h3>Resultado favorável</h3><p>É o resultado que atende ao que estamos procurando.</p></article>
+    <article><div class="emoji">🎲</div><h3>Resultados possíveis</h3><p>São todos os resultados que podem acontecer.</p></article>
+    <article><div class="emoji">📊</div><h3>Chance</h3><p>Pode ser representada por uma fração, decimal ou porcentagem.</p></article>
+  </div>
+  <div class="note"><strong>Atenção:</strong> a fórmula básica funciona diretamente quando todos os resultados possíveis têm a mesma chance de ocorrer.</div>
+</section>
+<section class="section pale" id="espaco"><div class="container">
+  <div class="section-title"><span>02</span><div><small>TODAS AS POSSIBILIDADES</small><h2>Espaço amostral</h2></div></div>
+  <p class="intro">O <strong>espaço amostral</strong> é o conjunto de todos os resultados possíveis de um experimento aleatório. Ele costuma ser representado pela letra grega Ω (ômega).</p>
+  <div class="example">
+    <div><small class="blue-tag">EXEMPLO 1</small><h3>Lançamento de um dado</h3><p>Um dado comum tem seis faces. Ao lançá-lo, pode sair qualquer número de 1 a 6.</p><p class="set">Ω = {1, 2, 3, 4, 5, 6}</p></div>
+    <div class="dice-grid"><span>⚀</span><span>⚁</span><span>⚂</span><span>⚃</span><span>⚄</span><span>⚅</span></div>
+  </div>
+  <div class="example">
+    <div class="coin"><span>CARA</span><span>COROA</span></div>
+    <div><small class="blue-tag">EXEMPLO 2</small><h3>Lançamento de uma moeda</h3><p>Considerando os dois lados de uma moeda, os resultados possíveis são cara ou coroa.</p><p class="set">Ω = {cara, coroa}</p></div>
+  </div>
+</div></section>
+<section class="section container" id="eventos">
+  <div class="section-title"><span>03</span><div><small>RESULTADOS QUE NOS INTERESSAM</small><h2>O que é um evento?</h2></div></div>
+  <p class="intro">Um <strong>evento</strong> é um conjunto de resultados do espaço amostral que atendem a uma condição específica: aquilo que queremos observar ou calcular.</p>
+  <div class="steps">
+    <div class="step-number">1</div><div><h3>Experimento</h3><p>Lançar um dado de seis faces.</p></div>
+    <div class="step-number">2</div><div><h3>Espaço amostral</h3><p>Ω = {1, 2, 3, 4, 5, 6}</p></div>
+    <div class="step-number">3</div><div><h3>Evento A: sair um número par</h3><p>A = {2, 4, 6}. Esses são os resultados favoráveis ao evento.</p></div>
+  </div>
+  <div class="event-types">
+    <article><i class="dot blue"></i><div><h3>Evento certo</h3><p>Acontece em todos os resultados possíveis. Ex.: sair um número de 1 a 6 em um dado comum.</p></div></article>
+    <article><i class="dot purple"></i><div><h3>Evento impossível</h3><p>Não pode acontecer. Ex.: sair 8 em um dado comum de seis faces.</p></div></article>
+    <article><i class="dot green"></i><div><h3>Evento simples</h3><p>Tem apenas um resultado. Ex.: sair 4, ou seja, {4}.</p></div></article>
+    <article><i class="dot orange"></i><div><h3>Evento composto</h3><p>Tem mais de um resultado. Ex.: sair número par, {2, 4, 6}.</p></div></article>
+  </div>
+</section>
+<section class="section pale" id="exemplos"><div class="container">
+  <div class="section-title"><span>04</span><div><small>VAMOS CALCULAR</small><h2>Exemplos passo a passo</h2></div></div>
+  <div class="calc-card"><div><h3>Qual a probabilidade de sair um número par?</h3><p>Os números pares são 2, 4 e 6. Temos 3 resultados favoráveis entre 6 possíveis.</p></div><div class="math"><span>Favoráveis</span><b>3</b><hr><span>Possíveis</span><b>6</b><strong>3 ÷ 6 = 50%</strong></div></div>
+  <div class="calc-card"><div><h3>Qual a probabilidade de sair o número 5?</h3><p>Existe apenas um resultado favorável (5) entre os seis resultados possíveis.</p></div><div class="math"><span>Favoráveis</span><b>1</b><hr><span>Possíveis</span><b>6</b><strong>1 ÷ 6 ≈ 16,67%</strong></div></div>
+  <div class="note"><strong>Como interpretar?</strong> 50% significa que, em muitas jogadas de um dado equilibrado, esperamos aproximadamente metade dos resultados pares. Isso não garante que acontecerá exatamente a cada dois lançamentos.</div>
+</div></section>
+<section class="section container" id="simulador">
+  <div class="section-title"><span>05</span><div><small>APRENDA EXPERIMENTANDO</small><h2>Simulador de eventos</h2></div></div>
+  <p class="intro">Escolha um evento e veja quais faces do dado são resultados favoráveis.</p>
+  <div class="simulator">
+    <label for="eventSelect">Qual evento você quer analisar?</label>
+    <select id="eventSelect">
+      <option value="par">Sair um número par</option><option value="impar">Sair um número ímpar</option>
+      <option value="maior4">Sair um número maior que 4</option><option value="cinco">Sair o número 5</option>
+      <option value="certo">Sair um número entre 1 e 6</option><option value="impossivel">Sair o número 7</option>
+    </select>
+    <div id="faces" class="faces"><span>1</span><span class="selected">2</span><span>3</span><span class="selected">4</span><span>5</span><span class="selected">6</span></div>
+    <div class="sim-result"><p id="setEvent">Evento A = {2, 4, 6}</p><strong id="chance">Probabilidade: 3/6 = 50%</strong><p id="eventExplain">Três dos seis resultados são favoráveis.</p></div>
+  </div>
+</section>
+<section class="quiz-section" id="quiz"><div class="container">
+  <div class="section-title light"><span>06</span><div><small>TESTE SEU CONHECIMENTO</small><h2>Desafio rápido</h2></div></div>
+  <p class="intro">Responda às quatro perguntas e confira sua pontuação.</p>
+  <form id="quizForm">
+    <fieldset><legend>1. O que é espaço amostral?</legend>
+      <label><input type="radio" name="q1" value="a"> Apenas o resultado desejado.</label>
+      <label><input type="radio" name="q1" value="b"> O conjunto de todos os resultados possíveis.</label>
+      <label><input type="radio" name="q1" value="c"> A porcentagem de chance de um evento.</label>
+    </fieldset>
+    <fieldset><legend>2. Qual é o espaço amostral de um dado comum?</legend>
+      <label><input type="radio" name="q2" value="a"> {1, 2, 3, 4, 5, 6}</label>
+      <label><input type="radio" name="q2" value="b"> {2, 4, 6}</label>
+      <label><input type="radio" name="q2" value="c"> {0, 1}</label>
+    </fieldset>
+    <fieldset><legend>3. Qual a probabilidade de sair 6 em um dado equilibrado?</legend>
+      <label><input type="radio" name="q3" value="a"> 50%</label>
+      <label><input type="radio" name="q3" value="b"> 100%</label>
+      <label><input type="radio" name="q3" value="c"> 1/6, aproximadamente 16,67%</label>
+    </fieldset>
+    <fieldset><legend>4. Sair 8 em um dado comum é um evento...</legend>
+      <label><input type="radio" name="q4" value="a"> Certo</label>
+      <label><input type="radio" name="q4" value="b"> Impossível</label>
+      <label><input type="radio" name="q4" value="c"> Simples e possível</label>
+    </fieldset>
+    <button class="btn btn-blue" type="submit">Corrigir respostas</button>
+    <p id="quizResult" aria-live="polite"></p>
+  </form>
+</div></section>
+</main>
+<footer><div class="container footer-inner"><a class="logo" href="#inicio">∑ Probabilidade</a><p>Trabalho escolar de Matemática • Espaço amostral e eventos</p><a href="#inicio">Voltar ao topo ↑</a></div></footer>
+</body>
+</html>
