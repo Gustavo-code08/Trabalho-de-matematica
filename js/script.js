@@ -36,7 +36,7 @@ menu.querySelectorAll("a").forEach(link => link.addEventListener("click", () => 
 
 document.getElementById("quizForm").addEventListener("submit", event => {
   event.preventDefault();
-  const correct = {q1:"a", q2:"c", q3:"d", q4:"c", q5:"e", q6:"d", q7:"c", q8:"c"};
+  const correct = {q1:"a", q2:"c", q3:"d", q4:"c", q5:"e", q6:"d", q7:"c", q8:"c", q9:"d"};
   let score = 0;
   let answered = 0;
   for (const [question, answer] of Object.entries(correct)) {
@@ -47,11 +47,11 @@ document.getElementById("quizForm").addEventListener("submit", event => {
     }
   }
   const output = document.getElementById("quizResult");
-  if (answered < 8) {
-    output.textContent = `Você respondeu ${answered} de 8 perguntas. Responda a todas para ver sua pontuação.`;
+  if (answered < 9) {
+    output.textContent = `Você respondeu ${answered} de 9 perguntas. Responda a todas para ver sua pontuação.`;
   } else {
-    output.textContent = `Você acertou ${score} de 8 perguntas! ` +
-      (score === 8 ? "Excelente! Você dominou o conteúdo!" :
+    output.textContent = `Você acertou ${score} de 9 perguntas! ` +
+      (score === 9 ? "Excelente! Você dominou o conteúdo!" :
        score >= 5 ? "Muito bem! Revise as explicações e tente novamente." :
        "Continue estudando e tente novamente. Você consegue!");
   }
